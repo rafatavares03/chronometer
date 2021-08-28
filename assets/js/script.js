@@ -2,13 +2,6 @@ const chronometer = document.querySelector('#chronometer');
 const timer = new Date;
 
 
-function TimerZero() {
-    timer.setMinutes(0);
-    timer.setSeconds(0);
-    timer.setMilliseconds(0);
-}
-TimerZero();
-
 function WriteChronometer() {
     const minutes = (timer.getMinutes() < 10) ? '0' + timer.getMinutes() : timer.getMinutes();
     const seconds = (timer.getSeconds() < 10) ? '0' + timer.getSeconds() : timer.getSeconds();
@@ -16,7 +9,16 @@ function WriteChronometer() {
 
     chronometer.innerHTML = `${minutes}:${seconds}:${milliseconds}`;
 }
-WriteChronometer();
+
+function TimerZero() {
+    timer.setMinutes(0);
+    timer.setSeconds(0);
+    timer.setMilliseconds(0);
+    WriteChronometer();
+}
+TimerZero();
+
+
 
 
 
@@ -31,4 +33,10 @@ document.querySelector('#start').addEventListener('click', function Counting() {
 
 document.querySelector('#pause').addEventListener('click', function StopCounting() {
     clearInterval(timer.interval);
+    timer.s
 });
+
+document.querySelector('#restart').addEventListener('click', function Restart() {
+    clearInterval(timer.interval);
+    TimerZero();
+})
