@@ -19,7 +19,7 @@ I builded this project to improve my JavaScript skills, and challenger myself to
 
 Screenshot
 ----------
-<img src="assets/screenshot/screenshot.png"><img>
+<img alt="screenshot" title="screenshot" src="assets/screenshot/screenshot.png"><img>
 
 How to use
 ----------
@@ -31,7 +31,7 @@ How to use
 
 Status
 ------
-:heavy_check_mark: Concluided :heavy_check_mark:
+Concluded :heavy_check_mark:
 
 Features
 --------
