@@ -1,5 +1,5 @@
 <h1 align="center">Chronometer</h1>
-<p align="center">This is a chronometer website made wit pure HTML, CSS and JavaScript</p>
+<p align="center">This is a chronometer website made with pure HTML, CSS and JavaScript</p>
 
 Summary
 ===========
@@ -24,9 +24,9 @@ Screenshot
 How to use
 ----------
 <p>To run this chronometer you will only need to open the HTML in a browser.</p>
-<p>You can start the chronometer with the start button, for start to counting the time.</p>
-<p>You can stop the chronometer with the pause button, for stop counting time. If you click in start, the chronometer will countinue count from when it stopped.</p>
-<p>You can restart the chronometer to zero with the restart button.For start to count again you need to click on the start button.</p>
+<p>You can start the chronometer clicking the start button, for start to counting the time.</p>
+<p>You can stop the chronometer clicking the pause button, for stop counting time. If you click in start again, the chronometer will countinue to count from when it stopped.</p>
+<p>You can restart the chronometer to zero clicking the restart button.For start to count again you need to click on the start button.</p>
 <p>The chronometer count minutes, seconds and milliseconds.</p>
 
 Status
