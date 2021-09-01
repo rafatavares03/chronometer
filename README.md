@@ -9,6 +9,7 @@ Summary
   * [How to use](#how-to-use)
   * [Status](#status)
   * [Features](#features)
+  * [Bugs](#bugs)
   * [Technologies](#technologies)
   * [Author](#author)
 <!--te-->
@@ -39,6 +40,11 @@ Features
 - [x] Pause the counting
 - [x] Restart the chronometer
 - [ ] Count hours
+
+Bugs
+----
+I had to solve a bug that when the start button was click more then once consecutively, the chronometer stay faster and unstoppable. When the chronometer was reseted, it went back to zero but didn't stop counting.
+To solve this problem I had to track when the chronometer was counting and when it was not. So, everytime the start is clicked the program will check if the chronometer is counting. If it isn't counting, it will start counting and if it is already counting, it won't count faster.
 
 Technologies
 ------------
