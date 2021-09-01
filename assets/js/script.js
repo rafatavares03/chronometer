@@ -1,5 +1,6 @@
 const chronometer = document.querySelector('#chronometer');
 const timer = new Date;
+let counting = false;
 
 
 
@@ -20,20 +21,24 @@ function TimerZero() {
 TimerZero();
 
 
-document.querySelector('#start').addEventListener('click', function Counting() {
-    timer.interval = setInterval(() => {
-        let milliseconds = timer.getMilliseconds();
-        milliseconds += 120;
-        timer.setMilliseconds(milliseconds);
-        WriteChronometer();
-    }, 120);
+document.querySelector('#start').addEventListener('click', function Count() {
+    if(!counting) {
+        counting = setInterval(() => {
+            let milliseconds = timer.getMilliseconds();
+            milliseconds += 120;
+            timer.setMilliseconds(milliseconds);
+            WriteChronometer();
+        }, 120);
+    }
 });
 
-document.querySelector('#pause').addEventListener('click', function StopCounting() {
-    clearInterval(timer.interval);
+document.querySelector('#pause').addEventListener('click', function StopCount() {
+    clearInterval(counting);
+    counting = false;
 });
 
 document.querySelector('#restart').addEventListener('click', function Restart() {
-    clearInterval(timer.interval);
+    clearInterval(counting);
+    counting = false;
     TimerZero();
 })
